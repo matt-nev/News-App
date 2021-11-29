@@ -35,13 +35,13 @@ class App extends Component {
         </div>
         <div className="row">
           <div className="col s12 m4 l2">
-            <Rightsidenews news={this.state.news3}/>
+            <Leftsidenews news={this.state.news2} />
           </div>
           <div className="col s12 m4 l8">
             <News news={this.state.news1} />  
           </div>      
-          <div className="col s12 m4 l2">
-            <Leftsidenews news={this.state.news2} />
+          <div className="col s12 m4 l2">   
+            <Rightsidenews news={this.state.news3} />
           </div>
         </div>
       </div>

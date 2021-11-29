@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RightSingle from './RightSingle';
+import NewSingle from './NewSingle';
 import Error from './Error';
 
 class News extends Component {
@@ -12,7 +12,7 @@ class News extends Component {
     }
 
     componentDidMount() {
-            const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=ec66ed8fdd4a41cbbb52ec3bb79f0fdd`;
+            const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=8438587332de4826b2616dd1fe162907`;
 
 
         fetch(url)
@@ -34,7 +34,7 @@ class News extends Component {
     renderItems(){
         if (!this.state.error) {
             return this.state.news.map((item) => ( 
-                <RightSingle key={item.url} item={item} />
+                <NewSingle key={item.url} item={item} />
             ));
         } else { 
             return < Error />
