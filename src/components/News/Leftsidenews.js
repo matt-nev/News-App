@@ -13,7 +13,7 @@ class Leftsidenews extends Component {
     }
 
     componentDidMount() {
-        const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=8438587332de4826b2616dd1fe162907`;
+        const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=50e813c0e31640fa83eb61f9a7d96738`;
    
         axios.get(url)
         .then((response) => {

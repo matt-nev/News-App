@@ -10,15 +10,15 @@ class App extends Component {
     this.state = {
       news1: {
         type: 'everything',
-        query: 'domains=apnews.com'
+        query: 'domains=apnews.com&pageSize=15&language=en'
       },
       news2: {
         type: 'everything',
-        query: 'domains=fark.com&language=en'
+        query: 'domains=fark.com&pageSize=9&language=en'
       },
       news3: {
         type: 'everything',
-        query: 'domains=cnn.com&language=en'
+        query: 'domains=cnn.com&pageSize=11&language=en'
       }
     };
   }
