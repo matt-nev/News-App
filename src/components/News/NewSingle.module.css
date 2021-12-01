@@ -13,15 +13,6 @@ body {
   background: #2980b9;
 }
 
-.card2 {
-  height: 490px;
-  background: #27ae60;
-}
-.card3 {
-  height: 440px;
-  background: #7f8c8d;
-}
-
 .cardHolder {
   display: flex;
   align-items: flex-start;
