@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  height: 450px;
+  background: #2980b9;
+}
+
+.card2 {
+  height: 490px;
+  background: #27ae60;
+}
+.card3 {
+  height: 440px;
+  background: #7f8c8d;
+}
+
+.cardHolder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.cardHolder {
+  border: 1px solid black;
+  min-height: 450px;
+  max-height: 450px;
+}
+.cardHolder div {
+  width: calc(100% / 3);
+  padding: 0;
+  margin: 0;
+}
+
+.card-image {
+  height: 100px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardHolder div {
+    width: 100%;
+  }
+}
